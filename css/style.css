@@ -165,6 +165,7 @@ body {
         height: auto;
         width: auto;
         background-color: transparent;
+        margin-left: auto;
     }
 
     .main-nav ul {
@@ -209,9 +210,8 @@ body {
 /*      AJUSTES RESPONSIVE FINALES         */
 /* ======================================= */
 
-/* --- Ajuste para agrupar iconos del header --- */
 .menu-toggle {
-    margin-left: auto; /* ¡Esta es la magia! Empuja el botón y el carrito a la derecha */
+    margin-left: auto;
 }
 
 .header-container {
@@ -236,4 +236,323 @@ body {
     .main-footer p {
         font-size: 0.8rem; /* Reduce un poco el texto del footer */
     }
+}
+
+/* ======================================= */
+/*      PÁGINA DE CATÁLOGO                 */
+/* ======================================= */
+
+.catalog-section {
+    padding: 4rem 0;
+}
+
+.catalog-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.catalog-header h1 {
+    font-family: var(--font-secondary);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.search-bar input {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid var(--light-grey);
+}
+
+.search-bar input:focus {
+    outline: 2px solid var(--siena-tostado);
+    border-color: var(--siena-tostado);
+}
+
+/* ======================================= */
+/*      PÁGINA DE INICIO (HOME)            */
+/* ======================================= */
+
+/* --- Hero Section --- */
+.hero-section {
+    background-color: var(--alabastro-calido);
+    min-height: 60vh; /* Usamos min-height para mejor flexibilidad */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero-content h1 {
+    font-family: var(--font-secondary);
+    font-size: 2.5rem;
+    color: var(--dark-wood);
+    margin-bottom: 1rem;
+    max-width: 600px; /* Evita que el título sea demasiado ancho */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    color: var(--siena-tostado);
+    margin-bottom: 2rem;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-block; /* Asegura que el padding se aplique bien */
+}
+
+.btn-primary {
+    background-color: var(--siena-tostado);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-wood);
+}
+
+/* --- Featured Products Section --- */
+.featured-products {
+    padding: 4rem 0;
+}
+
+.featured-products h2 {
+    text-align: center;
+    font-family: var(--font-secondary);
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: 2rem;
+    justify-content: center;
+}
+
+/* --- Product Card (Estilo de tarjeta de producto) --- */
+.product-card {
+    background: #fff;
+    border: 1px solid var(--light-grey);
+    border-radius: 8px;
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--dark-wood);
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.product-card-info {
+    padding: 1.5rem;
+    flex-grow: 1; /* Permite que la info ocupe el espacio disponible */
+}
+
+.product-card-info h3 {
+    font-family: var(--font-secondary);
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-card-info p {
+    font-weight: bold;
+    color: var(--siena-tostado);
+    font-size: 1.1rem;
+}
+
+/* --- Media Queries para el Hero --- */
+@media (min-width: 768px) {
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+}
+
+/* ======================================= */
+/*      PÁGINA DE DETALLE DE PRODUCTO      */
+/* ======================================= */
+
+.product-detail-container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.product-detail-layout {
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna en móvil */
+    gap: 2rem;
+    align-items: start;
+}
+
+.product-image-gallery img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid var(--light-grey);
+    display: block;
+    margin: 0 auto; /* Centra la imagen en móvil */
+}
+
+.product-info h1 {
+    font-family: var(--font-secondary);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.product-info .price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--siena-tostado);
+    margin-bottom: 1.5rem;
+}
+
+.product-info .description {
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+.product-specs {
+    margin-bottom: 2rem;
+}
+
+.product-specs h3 {
+    font-family: var(--font-secondary);
+    border-bottom: 2px solid var(--siena-tostado);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.product-specs ul {
+    list-style: none;
+    padding: 0;
+}
+
+.product-specs li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid var(--light-grey);
+}
+
+.product-specs li strong {
+    text-transform: capitalize;
+}
+
+.add-to-cart-btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: var(--siena-tostado);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: var(--dark-wood);
+}
+
+/* --- Estilos para Escritorio (a partir de 768px) --- */
+@media (min-width: 768px) {
+    .product-detail-layout {
+        grid-template-columns: 1fr 1fr; /* Dos columnas en escritorio */
+        gap: 3rem;
+    }
+}
+
+/* ======================================= */
+/*      PÁGINA DE CONTACTO                 */
+/* ======================================= */
+
+.contact-section {
+    padding: 4rem 0;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact-header h1 {
+    font-family: var(--font-secondary);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-family: var(--font-primary);
+    border: 1px solid var(--light-grey);
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--siena-tostado);
+}
+
+/* Estilo para mensajes de feedback */
+.form-message {
+    max-width: 600px;
+    margin: 2rem auto 0;
+    padding: 1rem;
+    border-radius: 4px;
+    text-align: center;
+    display: none; /* Oculto por defecto */
+}
+
+.form-message.success {
+    display: block;
+    background-color: #e6f4ea; /* Verde suave */
+    color: #3c763d;
+}
+
+.form-message.error {
+    display: block;
+    background-color: #f2dede; /* Rojo suave */
+    color: #a94442;
 }

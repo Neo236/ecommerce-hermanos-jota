@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermanos Jota - Producto</title> <!-- El JS cambiará esto al nombre del producto -->
+    
+    <!-- Google Fonts del Manual de Marca -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Hoja de Estilos -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Script Principal (diferido para mejor rendimiento) -->
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+
+    <!-- ============================ -->
+    <!--      HEADER (ENCABEZADO)     -->
+    <!-- ============================ -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="header-logo">
+                <img src="images/logo.svg" alt="Logo Hermanos Jota">
+                <span>Hermanos Jota</span>
+            </a>
+    
+            <!-- Botón de menú para móvil -->
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" height="24px" width="24px" fill="currentColor"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+            </button>
+    
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header-cart">
+                <a href="#">
+                    <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="2" d="M12.5 21a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1ZM5.5 21a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1ZM3 3h2.25l2.452 12.26a1 1 0 0 0 .976.74h9.844a1 1 0 0 0 .976-.74L21 6H5.25"></path></svg>
+                    <span class="cart-counter" id="cart-counter">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================ -->
+    <!--     CONTENIDO PRINCIPAL      -->
+    <!-- ============================ -->
+    <main>
+        
+        <div class="product-detail-container container" id="product-detail">
+            <!-- El detalle del producto se cargará aquí con JavaScript -->
+            <p>Cargando producto...</p> 
+        </div>
+
+    </main>
+
+    <!-- ============================ -->
+    <!--       FOOTER (PIE)           -->
+    <!-- ============================ -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <p>&copy; 2025 Casa Jota Digital. Todos los derechos reservados.</p>
+            <p>Un proyecto para la Escuela de Innovación ITBA.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
