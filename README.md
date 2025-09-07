@@ -71,7 +71,7 @@ Debido a que el proyecto utiliza la API `fetch` para cargar un archivo local (`p
 
 ---
 
-## 👥 Integrantes
+## 👥 Integrantes - Grupo 9 - Comisión 1TT
 
 *   Camila Maturano
 *   Candela …
