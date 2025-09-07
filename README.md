@@ -73,8 +73,8 @@ Debido a que el proyecto utiliza la API `fetch` para cargar un archivo local (`p
 
 ## 👥 Integrantes
 
+*   Camila Maturano
+*   Candela …
 *   Lautaro Sebastian Mambrin
-*   [Nombre del Integrante 2]
-*   [Nombre del Integrante 3]
-*   [Nombre del Integrante 4]
-*   [Nombre del Integrante 5]
+*   Pablo Méndez
+*   Eduardo Benjamin Lopez Avila
